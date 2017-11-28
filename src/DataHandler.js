@@ -29,7 +29,7 @@ function add (firstName, lastName, phoneNumber) {
         phoneNumber: phoneNumber
     };
 
-    if (find(phoneNumber)) {
+    if (!_.isEmpty(find(phoneNumber))) {
         return false;
     } else {
         contacts.push(person);
